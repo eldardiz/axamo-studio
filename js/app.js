@@ -215,14 +215,14 @@ function initReveals() {
     });
   });
 
-  // latest cards: fly in rotated from bottom-left (observed: rot -26°, x -100%, y +480)
-  document.querySelectorAll('.latest_content_item').forEach((item, i) => {
+  // latest cards: gentle fade in (no movement — left-to-center fly-in removed)
+  document.querySelectorAll('.latest_content_item').forEach((item) => {
     const visual = item.querySelector('.latest_visual');
     gsap.fromTo(visual,
-      { rotation: -26, x: () => -visual.offsetWidth, y: 480, opacity: 0 },
+      { opacity: 0 },
       {
-        rotation: 0, x: 0, y: 0, opacity: 1,
-        duration: 1.4, ease: 'mainOut',
+        opacity: 1,
+        duration: 0.8, ease: 'power2.out',
         scrollTrigger: { trigger: item, start: 'top 92%', once: true },
       });
   });
