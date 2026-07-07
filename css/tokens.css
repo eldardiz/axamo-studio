@@ -1,0 +1,76 @@
+/* Axamo Studio V2 tokens — original studio typography, Axamo colors only */
+:root {
+  /* Axamo palette */
+  --black: #000;
+  --dark: #252525;
+  --near-black: #1a1a1a;
+  --light: #f0f0eb;          /* canvas white */
+  --light-grey: #f6f6f6;     /* section light */
+  --brand: #c84b30;          /* terracotta */
+  --brand-dark: #93321d;
+  --tint: #eabebe;           /* light orange tint */
+  --navy: #002855;           /* footer accent only */
+  --text-gray: #333;
+  --muted: #999;
+  --navbar-border: #e2e2e2;
+  --transparent: #fff0;
+  --menu-bg: #f6f6f6;
+
+  --theme-bg: var(--light);
+  --theme-text: var(--dark);
+  --dot-color: rgba(37, 37, 37, 0.07);
+
+  /* type bands: identical to the verified skeleton */
+  --fs-h1: 13rem;      --lh-h1: 10.5rem;
+  --fs-h2: 10rem;      --lh-h2: 8.6rem;
+  --fs-h3: 3.5rem;     --lh-h3: 3.2rem;
+  --fs-h4: 1.9rem;     --lh-h4: 2rem;
+  --fs-main: 1.4rem;   --lh-main: 1.7rem;
+  --fs-mono: 0.9rem;   --lh-mono: 1rem;
+  --container-padding: 1.25rem;
+  --radius: 0.4rem;
+
+  --font-body: 'Archivo', Verdana, sans-serif;
+  --font-display: 'Archivo', Verdana, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+  --font-pixel: 'Pixelify Sans', monospace;
+
+  /* display face width-axis tuning (condensed display substitute) */
+  --display-wdth: 62;
+  --body-wdth: 100;
+}
+
+html[data-theme='dark'] {
+  --theme-bg: var(--dark);
+  --theme-text: #fff;
+  --dot-color: rgba(255, 255, 255, 0.05);
+  --menu-bg: var(--near-black);
+  --navbar-border: rgba(255, 255, 255, 0.14);
+}
+
+@media screen and (max-width: 991px) {
+  :root {
+    --fs-h1: 9.5rem;   --lh-h1: 7.75rem;
+    --fs-h2: 7rem;     --lh-h2: 6.25rem;
+    --fs-h3: 3rem;     --lh-h3: 2.9rem;
+    --fs-main: 1.25rem; --lh-main: 1.65rem;
+    --radius: 0.3rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  :root {
+    --fs-h1: 5.5rem;   --lh-h1: 4.5rem;
+    --fs-h2: 4rem;     --lh-h2: 3.3rem;
+    --fs-h3: 2.5rem;   --lh-h3: 2.8rem;
+    --fs-main: 1.2rem; --lh-main: 1.6rem;
+    --radius: 0.25rem;
+  }
+}
+
+/* live-measured: the .75rem gutter only applies below 480 */
+@media screen and (max-width: 479px) {
+  :root {
+    --container-padding: 0.75rem;
+  }
+}

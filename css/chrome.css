@@ -1,0 +1,84 @@
+/* ===== fixed navigation chrome ===== */
+
+/* reference renders no visible award badge; keep markup, hide visually */
+.ribbon { position: fixed; top: 50%; right: 0; transform: translateY(-50%); z-index: 11000; display: none; }
+.ribbon_badge {
+  width: 40px; height: 96px;
+  background: var(--dark);
+  color: var(--light);
+  display: flex; align-items: center; justify-content: center;
+  border-top-left-radius: var(--radius);
+  border-bottom-left-radius: var(--radius);
+}
+.ribbon_badge .text-block { writing-mode: vertical-rl; }
+@media screen and (max-width: 991px) { .ribbon { display: none; } }
+.nav-top .text-mono, .nav-bottom .text-mono { white-space: nowrap; }
+.nav-bottom_right { flex: 1; display: flex; justify-content: flex-end; }
+.city_time { font-weight: 400; }
+
+.nav-top {
+  position: fixed;
+  top: var(--container-padding);
+  left: 0; right: 0;
+  z-index: 10000;
+  mix-blend-mode: difference;
+}
+.nav-bottom {
+  position: fixed;
+  bottom: var(--container-padding);
+  left: 0; right: 0;
+  z-index: 9999;
+  mix-blend-mode: difference;
+}
+/* difference-blend text (reference uses light grey, not pure white) */
+.nav-top .difference, .nav-bottom .difference { color: #d3d3d3; }
+
+/* real Axamo star mark in the nav (orange, works on both themes) */
+.nav-brand-mark { display: inline-flex; align-items: center; }
+.nav-star { height: 15px; width: auto; display: block; }
+
+.nav-top_component {
+  display: grid;
+  grid-template-columns: 8fr 2fr 2fr;
+  align-items: start;
+  height: 1rem;
+}
+.nav-top_left { display: flex; gap: 8rem; }
+.nav-top_middle { display: flex; justify-content: flex-start; }
+.nav-top_right { display: flex; justify-content: flex-end; }
+
+.nav-bottom_component {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  height: 1rem;
+}
+.nav-bottom_right { display: flex; }
+
+/* city ticker: one row visible, rotates */
+.cities_list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  height: 1rem;
+  overflow: hidden;
+}
+.city_wrapper {
+  display: flex;
+  gap: 24px;
+  justify-content: flex-end;
+  height: 1rem;
+  flex-shrink: 0;
+}
+.city_time { min-width: 5.4em; text-align: right; }
+
+@media screen and (max-width: 991px) {
+  .nav-top_left { gap: 2rem; }
+  .nav-bottom { bottom: 2.2vw; }
+}
+@media screen and (max-width: 767px) {
+  .nav-top_component { grid-template-columns: 1fr auto; place-items: center stretch; height: auto; }
+  .nav-top_middle { display: flex; justify-content: flex-end; align-items: center; gap: 1.5rem; }
+  .nav-bottom { display: none; }
+}

@@ -1,0 +1,692 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Axamo Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,300..800;1,62..125,300..800&family=IBM+Plex+Mono:wght@300&family=Pixelify+Sans:wght@400..700&display=block" rel="stylesheet" />
+  <meta name="robots" content="noindex, nofollow" />
+  <script>
+    // theme pre-paint: no dark-mode FOUC
+    document.documentElement.dataset.theme = localStorage.getItem('sc-theme') || 'light';
+  </script>
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/chrome.css" />
+  <link rel="stylesheet" href="css/nav-menu.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/overlays.css" />
+</head>
+<body data-page="home">
+
+  <!-- award ribbon (neutral placeholder) -->
+  <div class="ribbon">
+    <div class="ribbon_badge"><span class="text-block">AW</span></div>
+  </div>
+
+  <!-- ===== top nav ===== -->
+  <nav class="nav-top">
+    <div class="padding-global">
+      <div class="container-nav">
+        <div class="nav-top_component">
+          <div class="nav-top_left">
+            <a href="#" class="nav-brand-mark" aria-label="Axamo Studio"><img src="assets/img/axamo-star.svg" alt="Axamo" class="nav-star" /></a>
+            <div class="nav-top_left_1">
+              <a href="#" class="link is-mono" data-flip-link>
+                <div class="link_first"><div class="text-mono difference">Axamo&reg; Studio</div></div>
+                <div class="link_second"><div class="text-mono difference">Axamo&reg; Studio</div></div>
+              </a>
+            </div>
+            <div class="nav-top_left_3 hide-mobile-landscape">
+              <div id="modeSwitch" class="link is-mono" data-flip-link>
+                <div class="link_first"><div class="text-mono difference">Dark mode</div></div>
+                <div class="link_second"><div class="text-mono difference">Dark mode</div></div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-top_middle">
+            <div id="menuToggle" class="link is-mono" data-flip-link>
+              <div class="link_first"><div class="text-mono difference">Menu</div></div>
+              <div class="link_second"><div class="text-mono difference">Menu</div></div>
+            </div>
+            <div id="modeSwitch2" class="show-mobile-landscape">
+              <div class="text-mono difference">Dark</div>
+            </div>
+          </div>
+          <div class="nav-top_right hide-mobile-landscape">
+            <div id="openContact" class="link is-mono" data-flip-link>
+              <div class="link_first"><div class="text-mono difference">Let's talk!</div></div>
+              <div class="link_second"><div class="text-mono difference">Say hello!</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== bottom nav ===== -->
+  <nav class="nav-bottom">
+    <div class="padding-global is-nav">
+      <div class="container-nav">
+        <div class="nav-bottom_component">
+          <div class="hide-tablet">
+            <div class="text-mono difference">Independent studio for bold brands</div>
+          </div>
+          <div class="nav-bottom_right">
+            <div class="cities_list">
+              <div class="city_wrapper">
+                <div class="text-mono difference city_name">(01) Vienna</div>
+                <div class="text-block difference city_time" data-tz="Europe/Vienna">00:00</div>
+              </div>
+              <div class="city_wrapper is-second">
+                <div class="text-mono difference city_name">(02) Sarajevo</div>
+                <div class="text-block difference city_time" data-tz="Europe/Sarajevo">00:00</div>
+              </div>
+              <div class="city_wrapper is-third">
+                <div class="text-mono difference city_name">(03) Paris</div>
+                <div class="text-block difference city_time" data-tz="Europe/Paris">00:00</div>
+              </div>
+              <div class="city_wrapper is-fourth">
+                <div class="text-mono difference city_name">(04) New York</div>
+                <div class="text-block difference city_time" data-tz="America/New_York">00:00</div>
+              </div>
+              <div class="city_wrapper is-fifth">
+                <div class="text-mono difference city_name">(05) Tokyo</div>
+                <div class="text-block difference city_time" data-tz="Asia/Tokyo">00:00</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== menu overlay ===== -->
+  <section class="nav-menu">
+    <div class="padding-global">
+      <div class="container-nav">
+        <div class="nav-menu_component">
+          <div class="nav-menu_col">
+            <a href="#" class="nav-menu_link_wrapper">
+              <div class="nav-menu_visual is-home"><img class="g_visual_img" src="assets/img/pr1.avif" alt="" /></div>
+              <div class="nav-menu_link">Home</div>
+            </a>
+            <a href="#" class="nav-menu_link_wrapper">
+              <div class="nav-menu_visual is-work"><img class="g_visual_img" src="assets/img/proj-flosum.jpg" alt="" /></div>
+              <div class="nav-menu_link">Work</div>
+            </a>
+            <a href="#" class="nav-menu_link_wrapper">
+              <div class="nav-menu_visual is-services"><img class="g_visual_img" src="assets/img/proj-coverbase.jpg" alt="" /></div>
+              <div class="nav-menu_link">Services</div>
+            </a>
+            <a href="#" class="nav-menu_link_wrapper">
+              <div class="nav-menu_visual is-approach"><img class="g_visual_img" src="assets/img/proj-abacai.jpg" alt="" /></div>
+              <div class="nav-menu_link">Approach</div>
+            </a>
+          </div>
+          <div class="nav-menu_col">
+            <a href="#" class="nav-menu_link_wrapper hidden">
+              <div class="nav-menu_link">·</div>
+            </a>
+            <a href="#" class="nav-menu_link_wrapper">
+              <div class="nav-menu_visual is-studio"><img class="g_visual_img" src="assets/img/proj-coldiq.jpg" alt="" /></div>
+              <div class="nav-menu_link">Studio</div>
+            </a>
+            <a href="#" class="nav-menu_link_wrapper">
+              <div class="nav-menu_visual is-pack"><img class="g_visual_img" src="assets/img/pr2.avif" alt="" /></div>
+              <div class="nav-menu_link">Plans</div>
+            </a>
+            <a href="#" class="nav-menu_link_wrapper">
+              <div class="nav-menu_visual is-resources"><img class="g_visual_img" src="assets/img/tablet.avif" alt="" /></div>
+              <div class="nav-menu_link">News</div>
+            </a>
+            <div id="openForm" class="nav-menu_link_wrapper show-mobile-landscape">
+              <div class="nav-menu_link">Contact us</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== contact overlay ===== -->
+  <section class="section_contact">
+    <div class="contact_background"></div>
+    <div class="padding-global z-index-1">
+      <div class="container-large">
+        <div class="contact_component">
+          <div class="contact_top">
+            <div id="closeForm" class="link" data-flip-link>
+              <div class="link_first"><div class="text-mono">Close</div></div>
+              <div class="link_second"><div class="text-mono">Close</div></div>
+            </div>
+          </div>
+          <div class="contact_form-block">
+            <form class="contact_form" onsubmit="return false">
+              <div>
+                <h1 class="heading-style-h2">Start a dialogue<br /><span class="contact_visual"></span></h1>
+              </div>
+              <div class="contact_rows">
+                <div class="contact_row">
+                  <label for="name" class="text-mono is-smaller">Name</label>
+                  <input id="name" class="contact_field" type="text" autocomplete="off" />
+                </div>
+                <div class="contact_row">
+                  <label for="email" class="text-mono is-smaller">Email</label>
+                  <input id="email" class="contact_field" type="email" autocomplete="off" />
+                </div>
+                <div class="contact_row">
+                  <label for="phone" class="text-mono is-smaller">Phone</label>
+                  <input id="phone" class="contact_field" type="tel" autocomplete="off" />
+                </div>
+                <div class="contact_row">
+                  <label class="text-mono is-smaller">Interest</label>
+                  <div class="contact_radio_wrapper">
+                    <label class="contact_radio">
+                      <div class="contact_radio_button"></div>
+                      <input type="radio" name="interest" value="design" />
+                      <span class="contact_radio_label">Design</span>
+                    </label>
+                    <label class="contact_radio">
+                      <div class="contact_radio_button"></div>
+                      <input type="radio" name="interest" value="dev" />
+                      <span class="contact_radio_label">Design and develop</span>
+                    </label>
+                    <label class="contact_radio">
+                      <div class="contact_radio_button"></div>
+                      <input type="radio" name="interest" value="all" />
+                      <span class="contact_radio_label">The whole kit</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="contact_row">
+                  <label for="message" class="text-mono is-smaller">Message</label>
+                  <textarea id="message" class="contact_area"></textarea>
+                </div>
+                <div class="contact_bottom">
+                  <div class="text-mono is-smaller even-smaller">By sending you accept the <a href="#" class="link-underline">house rules</a></div>
+                  <input type="submit" value="Send" class="contact_submit" />
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="contact_success">
+            <div class="contact_success_wrapper">
+              <div><div class="heading-style-h2">Received!<span class="success_visual"></span></div></div>
+            </div>
+            <div class="contact_success_mono_wrapper">
+              <div id="closeForm2" class="link" data-flip-link>
+                <div class="link_first"><div class="text-mono">Back to browsing</div></div>
+                <div class="link_second"><div class="text-mono">Back to browsing</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="contact_overlay"></div>
+
+  <!-- ===== preloader (Osmo number loader, 3 steps) ===== -->
+  <div class="loading-container">
+    <div class="loading-screen">
+      <div class="loading__progress">
+        <div class="loading__progress-inner"></div>
+      </div>
+      <div class="loading__numbers">
+        <div class="loading__number-group is--first">
+          <div class="loading__number-wrap"><span class="loading__number">1</span></div>
+        </div>
+        <div class="loading__number-group is--second">
+          <div class="loading__number-wrap"><span class="loading__number">1</span><span class="loading__number">2</span><span class="loading__number">3</span><span class="loading__number">4</span><span class="loading__number">5</span><span class="loading__number">6</span><span class="loading__number">7</span><span class="loading__number">8</span><span class="loading__number">9</span><span class="loading__number">0</span></div>
+        </div>
+        <div class="loading__number-group is--third">
+          <div class="loading__number-wrap"><span class="loading__number">1</span><span class="loading__number">2</span><span class="loading__number">3</span><span class="loading__number">4</span><span class="loading__number">5</span><span class="loading__number">6</span><span class="loading__number">7</span><span class="loading__number">8</span><span class="loading__number">9</span><span class="loading__number">0</span></div>
+        </div>
+        <div class="loading__percentage-wrap"><span class="loading__percentage">%</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="transition"><div class="transition_overlay"></div></div>
+
+  <!-- ===== cookie banner ===== -->
+  <div id="cookie" class="cookie">
+    <p class="cookie_description">This demo stores a tiny bit of data in your browser to remember theme and consent choices, nothing more. <a href="#" class="cookie_link">Privacy notice</a></p>
+    <div id="acceptCookie" class="small-link">
+      <div class="text-mono_wrapper"><div class="text-mono">Accept cookies</div></div>
+      <div class="small-link_arrow">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H4M10 2V8" stroke="currentColor" stroke-width="1.4"/></svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== page ===== -->
+  <div id="swup" class="page-wrapper">
+    <main id="smooth-wrapper" class="page-main">
+      <main id="smooth-content" class="main-wrapper">
+
+        <!-- hero -->
+        <section id="hero-section" class="section_hero overflow-hidden no-cursor">
+          <div class="padding-global">
+            <div class="container-large">
+              <div class="hero_component is-home">
+                <div class="h1-french">
+                  <div class="heading-appear">
+                    <h1 class="text-align-center french-home-hero">Studio de maquette<br />pour marques<br />audacieuses</h1>
+                  </div>
+                </div>
+                <div class="h1-english">
+                  <div class="heading-appear">
+                    <h1 class="text-align-center">We craft<br />moving<br />design</h1>
+                  </div>
+                </div>
+                <div class="moving-visual_wrapper">
+                  <div>
+                    <div class="moving-visual is-light"><div class="placeholder-media is-img"><img class="g_visual_img" src="assets/img/proj-coverbase.jpg" alt="" /></div></div>
+                  </div>
+                  <div>
+                    <div class="moving-visual is-dark"><div class="placeholder-media is-img"><img class="g_visual_img" src="assets/img/proj-coldiq.jpg" alt="" /></div></div>
+                  </div>
+                </div>
+                <div class="hero_bottom">
+                  <div class="show-mobile-landscape">
+                    <div class="hero_bottom_wrapper">
+                      <div class="text-mono_wrapper"><div class="text-mono">( Scroll )</div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- home video -->
+        <section id="video-container-section" class="section_home-video">
+          <div class="padding-global">
+            <div class="container-large">
+              <div class="element-appear">
+                <div class="visuals_component">
+                  <div class="visual_wrapper grow-appear is-home-video">
+                    <div class="home-video light">
+                      <div class="placeholder-media is-img"><img class="g_visual_img" src="assets/img/proj-abacai.jpg" alt="Axamo web design work" /></div>
+                    </div>
+                    <div class="visual_overlay"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- intro / manifesto -->
+        <section class="section_home-intro">
+          <div class="padding-global">
+            <div class="container-large">
+              <div class="home_intro_component">
+                <div class="home_intro_mono_wrapper">
+                  <div class="text-mono_wrapper">
+                    <h2 class="text-mono">A placeholder studio for bold rebuilds</h2>
+                  </div>
+                </div>
+                <div class="simple-appear hide-mobile-landscape">
+                  <p class="home_intro_content">A small team building<br />expressive websites with
+                    <span class="home_intro_hover is-first" data-visual-group="a">motion</span>,<br />craft and a taste for<br />the
+                    <span class="home_intro_hover is-second" data-visual-group="b">unexpected</span>.
+                  </p>
+                </div>
+                <div class="text-appear show-mobile-landscape">
+                  <p class="home_intro_content">A small team building<br />expressive websites<br />with motion, craft<br />and a real taste<br />for the unexpected,<br />start to finish.</p>
+                </div>
+                <div>
+                  <div class="home_intro_visuals">
+                    <div class="home_intro_image placeholder-media is-img" data-group="a"><img class="g_visual_img" src="assets/img/proj-flosum.jpg" alt="" /></div>
+                    <div class="home_intro_image placeholder-media is-img" data-group="b"><img class="g_visual_img" src="assets/img/pr1.avif" alt="" /></div>
+                    <div class="home_intro_image placeholder-media is-img" data-group="a"><img class="g_visual_img" src="assets/img/proj-coverbase.jpg" alt="" /></div>
+                    <div class="home_intro_image placeholder-media is-img" data-group="b"><img class="g_visual_img" src="assets/img/pr2.avif" alt="" /></div>
+                    <div class="home_intro_image placeholder-media is-img" data-group="a"><img class="g_visual_img" src="assets/img/proj-abacai.jpg" alt="" /></div>
+                    <div class="home_intro_image placeholder-media is-img" data-group="b"><img class="g_visual_img" src="assets/img/pr3.avif" alt="" /></div>
+                    <div class="home_intro_image placeholder-media is-img" data-group="a"><img class="g_visual_img" src="assets/img/proj-coldiq.jpg" alt="" /></div>
+                    <div class="home_intro_image placeholder-media is-img" data-group="b"><img class="g_visual_img" src="assets/img/tablet.avif" alt="" /></div>
+                    <div class="home_intro_image placeholder-media is-img" data-group="a"><img class="g_visual_img" src="assets/img/proj-flosum.jpg" alt="" /></div>
+                    <div class="home_intro_image placeholder-media is-img" data-group="b"><img class="g_visual_img" src="assets/img/pr1.avif" alt="" /></div>
+                    <div class="home_intro_image placeholder-media is-img" data-group="a"><img class="g_visual_img" src="assets/img/proj-coverbase.jpg" alt="" /></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- latest / selected projects -->
+        <section class="section_latest">
+          <div class="padding-global">
+            <div class="container-large">
+              <div class="latest_component">
+                <div class="home_latest_heading_wrapper">
+                  <div class="home_latest_heading_absolute">
+                    <div class="text-mono_wrapper"><h2 class="text-mono">Selected projects</h2></div>
+                  </div>
+                  <a href="#" data-cursor-hover="Portfolio">
+                    <div class="heading-appear"><p class="playground-heading">Playground</p></div>
+                  </a>
+                </div>
+                <div class="latest_clw">
+                  <div class="latest_content">
+                    <div class="latest_content_item">
+                      <a href="#" class="latest_visual" data-cursor-hover="Flosum">
+                        <div class="latest_visual_background placeholder-media is-img"><img class="g_visual_img" src="assets/img/proj-flosum.jpg" alt="Flosum website project" loading="lazy" /></div>
+                        <div class="latest_visual_overlay"></div>
+                        <div class="latest_visual_video_wrapper">
+                          <div class="visual_scale"><div class="placeholder-media is-img"><img class="g_visual_img" src="assets/img/proj-flosum.jpg" alt="" loading="lazy" /></div></div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="latest_content_item">
+                      <a href="#" class="latest_visual" data-cursor-hover="Coverbase">
+                        <div class="latest_visual_background placeholder-media is-img"><img class="g_visual_img" src="assets/img/proj-coverbase.jpg" alt="Coverbase website project" loading="lazy" /></div>
+                        <div class="latest_visual_overlay"></div>
+                        <div class="latest_visual_video_wrapper">
+                          <div class="visual_scale"><div class="placeholder-media is-img"><img class="g_visual_img" src="assets/img/proj-coverbase.jpg" alt="" loading="lazy" /></div></div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="latest_content_item">
+                      <a href="#" class="latest_visual" data-cursor-hover="Abacai">
+                        <div class="latest_visual_background placeholder-media is-img"><img class="g_visual_img" src="assets/img/proj-abacai.jpg" alt="Abacai website project" loading="lazy" /></div>
+                        <div class="latest_visual_overlay"></div>
+                        <div class="latest_visual_video_wrapper">
+                          <div class="visual_scale"><div class="placeholder-media is-img"><img class="g_visual_img" src="assets/img/proj-abacai.jpg" alt="" loading="lazy" /></div></div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="latest_content_item">
+                      <a href="#" class="latest_visual" data-cursor-hover="ColdIQ">
+                        <div class="latest_visual_background placeholder-media is-img"><img class="g_visual_img" src="assets/img/proj-coldiq.jpg" alt="ColdIQ website project" loading="lazy" /></div>
+                        <div class="latest_visual_overlay"></div>
+                        <div class="latest_visual_video_wrapper">
+                          <div class="visual_scale"><div class="placeholder-media is-img"><img class="g_visual_img" src="assets/img/proj-coldiq.jpg" alt="" loading="lazy" /></div></div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- services -->
+        <section class="section_home-services">
+          <div class="padding-global">
+            <div class="container-large">
+              <div class="home_services_component">
+                <div class="text-mono_wrapper"><h2 class="text-mono">Services</h2></div>
+                <div class="home_services_list">
+                  <div class="home_services_list-item_wrapper">
+                    <div class="home_services_list-item_container">
+                      <div class="home_services_list-item line-appear">Art direction</div>
+                      <div class="home_services_list-item_absolute"><div class="text-mono">Storytelling</div></div>
+                    </div>
+                    <div class="home_services_embed">
+                      <div class="home_services_visual_wrapper"><div class="placeholder-media is-a"></div></div>
+                    </div>
+                  </div>
+                  <div class="home_services_list-item_wrapper">
+                    <div class="home_services_list-item_container">
+                      <div class="home_services_list-item line-appear">Branding</div>
+                      <div class="home_services_list-item_absolute"><div class="text-mono">Identity</div></div>
+                    </div>
+                    <div class="home_services_embed">
+                      <div class="home_services_visual_wrapper"><div class="placeholder-media is-b"></div></div>
+                    </div>
+                  </div>
+                  <div class="home_services_list-item_wrapper">
+                    <div class="home_services_list-item_container">
+                      <div class="home_services_list-item line-appear">Webflow</div>
+                      <div class="home_services_list-item_absolute"><div class="text-mono">Integration</div></div>
+                    </div>
+                    <div class="home_services_embed">
+                      <div class="home_services_visual_wrapper"><div class="placeholder-media is-c"></div></div>
+                    </div>
+                  </div>
+                  <div class="home_services_list-item_wrapper">
+                    <div class="home_services_list-item_container">
+                      <div class="home_services_list-item line-appear">UI/UX design</div>
+                      <div class="home_services_list-item_absolute"><div class="text-mono">Wireframes</div></div>
+                    </div>
+                    <div class="home_services_embed">
+                      <div class="home_services_visual_wrapper"><div class="placeholder-media is-d"></div></div>
+                    </div>
+                  </div>
+                  <div class="home_services_list-item_wrapper">
+                    <div class="home_services_list-item_container">
+                      <div class="home_services_list-item line-appear">Web animations</div>
+                      <div class="home_services_list-item_absolute"><div class="text-mono">Transitions</div></div>
+                    </div>
+                    <div class="home_services_embed">
+                      <div class="home_services_visual_wrapper"><div class="placeholder-media is-e"></div></div>
+                    </div>
+                  </div>
+                  <div class="home_services_list-item_wrapper hide">
+                    <div class="home_services_list-item_container">
+                      <div class="home_services_list-item line-appear">3D + motion</div>
+                      <div class="home_services_list-item_absolute"><div class="text-mono">Immersive</div></div>
+                    </div>
+                    <div class="home_services_embed">
+                      <div class="home_services_visual_wrapper"><div class="placeholder-media is-f"></div></div>
+                    </div>
+                  </div>
+                  <div class="home_services_list-item_wrapper">
+                    <div class="home_services_list-item_container">
+                      <div class="home_services_list-item line-appear">Advertising</div>
+                      <div class="home_services_list-item_absolute"><div class="text-mono">Creative ads</div></div>
+                    </div>
+                    <div class="home_services_embed">
+                      <div class="home_services_visual_wrapper"><div class="placeholder-media is-a"></div></div>
+                    </div>
+                  </div>
+                  <div class="home_services_list-item_wrapper">
+                    <div class="home_services_list-item_container">
+                      <div class="home_services_list-item line-appear">SEO + content</div>
+                      <div class="home_services_list-item_absolute"><div class="text-mono">Ranking</div></div>
+                    </div>
+                    <div class="home_services_embed">
+                      <div class="home_services_visual_wrapper"><div class="placeholder-media is-b"></div></div>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="small-link align-center" data-cursor-hover="Services">
+                  <div class="text-mono_wrapper"><div class="text-mono">See all</div></div>
+                  <div class="small-link_arrow">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H4M10 2V8" stroke="currentColor" stroke-width="1.4"/></svg>
+                  </div>
+                </a>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- clients -->
+        <section class="section_home-clients">
+          <div class="padding-global">
+            <div class="container-large">
+              <div class="home_clients_component">
+                <div class="home_clients_list">
+                  <div class="code-embed"><div class="client_logo_wrapper"><img class="client_logo" src="assets/img/client-oracle.png" alt="Oracle" /></div></div>
+                  <div class="code-embed"><div class="client_logo_wrapper"><img class="client_logo" src="assets/img/client-vanta.webp" alt="Vanta" /></div></div>
+                  <div class="code-embed"><div class="client_logo_wrapper"><img class="client_logo" src="assets/img/client-zoho.png" alt="Zoho" /></div></div>
+                  <div class="code-embed"><div class="client_logo_wrapper"><img class="client_logo" src="assets/img/client-flosum.svg" alt="Flosum" /></div></div>
+                  <div class="code-embed"><div class="client_logo_wrapper"><img class="client_logo" src="assets/img/client-coldiq.svg" alt="ColdIQ" /></div></div>
+                </div>
+                <div class="client_logo is-extra"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- cta -->
+        <section class="section_cta">
+          <div class="padding-global">
+            <div class="container-large">
+              <div class="cta_component">
+                <div>
+                  <h2 class="line-appear">Make it<br /><span class="cta_visual"></span>memorable</h2>
+                </div>
+                <div class="cta_content">
+                  <div class="text-appear">
+                    <p>Work with us if ordinary was never<br />really your thing anyway.</p>
+                    <div class="spacer-small show-mobile-portrait"></div>
+                  </div>
+                  <div id="openContact2" class="small-link" data-cursor-hover="Let's talk">
+                    <div class="text-mono_wrapper"><div class="text-mono">Say hello</div></div>
+                    <div class="small-link_arrow">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H4M10 2V8" stroke="currentColor" stroke-width="1.4"/></svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- footer -->
+        <footer class="footer">
+          <div class="padding-global">
+            <div class="container-large">
+              <div class="footer_component">
+                <div class="footer_top">
+                  <div class="grow-appear"><div class="footer_top_video placeholder-media is-img"><img class="g_visual_img" src="assets/img/proj-flosum.jpg" alt="" loading="lazy" /></div></div>
+                  <div class="grow-appear"><div class="footer_top_video placeholder-media is-img"><img class="g_visual_img" src="assets/img/proj-coverbase.jpg" alt="" loading="lazy" /></div></div>
+                  <div class="grow-appear"><div class="footer_top_video placeholder-media is-img"><img class="g_visual_img" src="assets/img/proj-abacai.jpg" alt="" loading="lazy" /></div></div>
+                  <div class="grow-appear hide-mobile-landscape"><div class="footer_top_video placeholder-media is-img"><img class="g_visual_img" src="assets/img/proj-coldiq.jpg" alt="" loading="lazy" /></div></div>
+                  <div class="grow-appear hide-mobile-landscape"><div class="footer_top_video placeholder-media is-img"><img class="g_visual_img" src="assets/img/pr1.avif" alt="" loading="lazy" /></div></div>
+                  <div class="grow-appear hide-tablet"><div class="footer_top_video placeholder-media is-img"><img class="g_visual_img" src="assets/img/pr3.avif" alt="" loading="lazy" /></div></div>
+                </div>
+                <div class="footer_content">
+                  <div class="footer_main">
+                    <div class="footer_menu _2col-mobile">
+                      <div class="footer_menu_col">
+                        <a href="#" class="link is-mono-footer" data-flip-link>
+                          <div class="link_first"><div class="mono-appear"><div class="text-mono">Home</div></div></div>
+                          <div class="link_second"><div class="text-mono">Home</div></div>
+                        </a>
+                        <a href="#" class="link is-mono-footer" data-flip-link>
+                          <div class="link_first"><div class="mono-appear"><div class="text-mono">Work</div></div></div>
+                          <div class="link_second"><div class="text-mono">Work</div></div>
+                        </a>
+                        <a href="#" class="link is-mono-footer" data-flip-link>
+                          <div class="link_first"><div class="mono-appear"><div class="text-mono">Services</div></div></div>
+                          <div class="link_second"><div class="text-mono">Services</div></div>
+                        </a>
+                        <a href="#" class="link is-mono-footer" data-flip-link>
+                          <div class="link_first"><div class="mono-appear"><div class="text-mono">Studio</div></div></div>
+                          <div class="link_second"><div class="text-mono">Studio</div></div>
+                        </a>
+                        <a href="#" class="link is-mono-footer" data-flip-link>
+                          <div class="link_first"><div class="mono-appear"><div class="text-mono">Plans</div></div></div>
+                          <div class="link_second"><div class="text-mono">Plans</div></div>
+                        </a>
+                        <a href="#" class="link is-mono-footer" data-flip-link>
+                          <div class="link_first"><div class="mono-appear"><div class="text-mono">Approach</div></div></div>
+                          <div class="link_second"><div class="text-mono">Approach</div></div>
+                        </a>
+                        <a href="#" class="link is-mono-footer" data-flip-link>
+                          <div class="link_first"><div class="mono-appear"><div class="text-mono">News</div></div></div>
+                          <div class="link_second"><div class="text-mono">News</div></div>
+                        </a>
+                      </div>
+                      <div class="footer_menu_col">
+                        <a href="#" class="link is-mono-footer" data-flip-link>
+                          <div class="link_first"><div class="mono-appear"><div class="text-mono">YouTube</div></div></div>
+                          <div class="link_second"><div class="text-mono">YouTube</div></div>
+                        </a>
+                        <a href="#" class="link is-mono-footer" data-flip-link>
+                          <div class="link_first"><div class="mono-appear"><div class="text-mono">LinkedIn</div></div></div>
+                          <div class="link_second"><div class="text-mono">LinkedIn</div></div>
+                        </a>
+                        <a href="#" class="link is-mono-footer" data-flip-link>
+                          <div class="link_first"><div class="mono-appear"><div class="text-mono">Instagram</div></div></div>
+                          <div class="link_second"><div class="text-mono">Instagram</div></div>
+                        </a>
+                        <a href="#" class="link is-mono-footer" data-flip-link>
+                          <div class="link_first"><div class="mono-appear"><div class="text-mono">Legal</div></div></div>
+                          <div class="link_second"><div class="text-mono">Legal</div></div>
+                        </a>
+                        <div>
+                          <div class="locales-list">
+                            <div class="locale">
+                              <div class="link is-mono-footer no-padding-right">
+                                <div class="link_first"><div class="mono-appear is-locales"><a href="#" class="text-mono">English (EN) site</a></div></div>
+                                <div class="link_second is-locales"><a href="#" class="text-mono">English (EN) site</a></div>
+                              </div>
+                            </div>
+                            <div class="locale">
+                              <div class="link is-mono-footer no-padding-right">
+                                <div class="link_first"><div class="mono-appear is-locales"><a href="#" class="text-mono">French (FR) site</a></div></div>
+                                <div class="link_second is-locales"><a href="#" class="text-mono">French (FR) site</a></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="footer_menu">
+                      <div class="footer_menu_col">
+                        <div class="text-appear"><div class="text-mono">A placeholder studio rebuilt for layout and motion study only</div></div>
+                      </div>
+                      <div class="footer_menu_col">
+                        <div class="text-appear"><div class="text-mono">Based between Vienna and Sarajevo, shipping worldwide</div></div>
+                      </div>
+                      <div class="footer_menu_col">
+                        <div class="text-appear"><div class="text-mono">Say hi anytime</div></div>
+                      </div>
+                      <div class="footer_menu_col">
+                        <a href="mailto:hello@example.com" class="link is-mono-footer" data-cursor-hover="Send love" data-flip-link>
+                          <div class="link_first"><div class="text-appear"><div class="text-mono">hello@example.dev</div></div></div>
+                          <div class="link_second"><div class="text-mono">hello@example.dev</div></div>
+                        </a>
+                      </div>
+                      <div class="footer_menu_col">
+                        <div class="text-appear"><div class="text-mono">All rights, ok</div></div>
+                        <div class="text-appear"><div class="text-mono">© 2026 Clone</div></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="footer_logo_wrapper">
+                    <div class="footer_logo_fill">
+                      <div class="logo-instance">
+                        <img class="footer-wordmark-img" src="assets/img/axamo-wordmark.svg" alt="Axamo" />
+                      </div>
+                    </div>
+                    <div class="footer_logo_stretch">
+                      <div class="logo-instance">
+                        <img class="footer-wordmark-img" src="assets/img/axamo-wordmark.svg" alt="Axamo" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+      </main>
+    </main>
+  </div>
+
+  <div class="custom-cursor"><span class="custom-cursor_label"></span></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/SplitText.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/CustomEase.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.23/dist/lenis.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

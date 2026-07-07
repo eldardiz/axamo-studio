@@ -1,0 +1,51 @@
+/* ===== footer ===== */
+
+.footer { padding-bottom: 3.2rem; }
+.footer_component { display: flex; flex-direction: column; gap: 5rem; }
+
+.footer_top {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 32px;
+}
+.footer_top_video {
+  position: relative;
+  aspect-ratio: 210 / 126;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.footer_content { display: flex; flex-direction: column; gap: 8.75rem; }
+.footer_main {
+  display: grid;
+  grid-template-columns: 58.35% 33.35%;
+  justify-content: space-between;
+}
+.footer_menu { display: flex; flex-direction: column; gap: 30px; }
+.footer_menu_col { display: flex; flex-direction: column; gap: 4px; }
+.footer_menu_col .link { height: 19px; }
+.locales-list { display: flex; flex-direction: row; gap: 1rem; }
+
+/* giant stretch wordmark */
+.footer_logo_wrapper { position: relative; width: 100%; aspect-ratio: 1400 / 458; }
+.footer_logo_fill { opacity: 0; width: 100%; height: 100%; }
+.footer_logo_stretch { position: absolute; inset: 0; }
+.logo-instance { width: 100%; height: 100%; }
+.logo-instance svg { width: 100%; height: 100%; color: var(--theme-text); }
+.footer-wordmark-img { width: 100%; height: 100%; object-fit: contain; object-position: center; }
+html[data-theme='dark'] .footer-wordmark-img { filter: invert(1); }
+
+@media screen and (max-width: 991px) {
+  .footer { padding-bottom: 2.5rem; }
+  .footer_top { grid-template-columns: repeat(5, 1fr); gap: 1rem; }
+}
+@media screen and (max-width: 767px) {
+  .footer { padding-bottom: 1.25rem; }
+  .footer_top { grid-template-columns: repeat(3, 1fr); }
+  .footer_main { grid-template-columns: 1fr; gap: 2rem; }
+  .footer_menu._2col-mobile { flex-direction: column; gap: 2rem; }
+}
+@media screen and (max-width: 479px) {
+  .footer { padding-bottom: 0.75rem; }
+  .footer_main { padding-right: 0; }
+}
